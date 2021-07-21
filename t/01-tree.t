@@ -1196,7 +1196,7 @@ like Pod::To::HTMLBody.render( $=pod[$pod-counter++] ), /
 =for pod
 =for nested
 =for para :nested(1)
-E<a;b>E<a;b;c>
+E<alpha;beta>E<alpha;beta;gamma>
 ♥♥♥
 =end pod
 
@@ -1208,7 +1208,7 @@ like Pod::To::HTMLBody.render( $=pod[$pod-counter++] ), /
 		'</section>'
 		'<section>'
 			'<h1>' 'para' '</h1>'
-			'<p>' 'a ba b c ♥♥♥' '</p>'
+			'<p>' 'α βα β γ ♥♥♥' '</p>'
 		'</section>'
 	'</div>'
 /, 'RT #131400';
